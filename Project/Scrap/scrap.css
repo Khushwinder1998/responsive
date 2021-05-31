@@ -1,0 +1,37 @@
+/* animation-name: backInLeft;
+animation-duration: 1s;
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-auto-rows: minmax(100px,auto);
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    justify-items: stretch;
+    align-items:stretch;
+}
+.box1{
+    align-self: start;
+    align-self: end;
+    justify-self: end;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    /* overlap */
+    /* grid-column: 1;
+    grid-row: 1/3;
+} 
+/* #rect2{
+    width: 100%;
+    height: 200px;
+    background-color: #ce93d8ad;
+    position: absolute;
+    top:-180px;
+    left:0;
+    z-index: -1;
+    transform: skewY(-10deg);
+} 
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  } */
