@@ -11,8 +11,6 @@
     
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
@@ -23,11 +21,6 @@
 body{
     font-family: 'Domine', serif;
     margin: 0;
-}
-header{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
 }
 .innerHeader{
     display: flex;
@@ -45,10 +38,7 @@ header{
     animation: heartBeat; 
     animation-duration: 1s;
 }
-.innerHeader ul{
-    display: flex;
-    list-style-type: none;
-}
+
 .innerHeader a{
     display: inline-block;
     text-decoration: none;
@@ -70,8 +60,7 @@ header{
     padding:100px 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-column-gap: 100px;
-    grid-row-gap: 40px;
+    grid-gap: 100px;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -93,8 +82,8 @@ header{
     background-color: white;
     border:solid 0.5px;
     border-radius:5px;
+    margin:5px 10px;
     font-size:1.2rem;
-    padding:10px 40px;
 }
 .cssSection button:hover{
     color: red;
@@ -108,8 +97,7 @@ header{
     font-size: 1.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-column-gap: 100px;
-    grid-row-gap: 40px;
+    grid-gap: 100px;
     justify-content: center;
     padding: 30px;
 }
@@ -118,12 +106,11 @@ header{
     color:#fd1818;
 }
 .jsSection button{
-    font-family: 'Domine', serif;
     background-color: white;
     border:solid 0.5px;
     border-radius:5px;
     font-size:1.2rem;
-    padding:10px 40px;
+    padding:10px 30px;
 }
 .jsSection button:hover{
     color: red;
@@ -143,4 +130,18 @@ footer{
 footer p{
     color: white;
     padding: 10px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    .innerHeader ul{
+        display: flex;
+        list-style-type: none;
+    }
+    
 }
