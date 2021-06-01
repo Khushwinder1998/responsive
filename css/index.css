@@ -9,6 +9,9 @@ body{
 .innerHeader{
     padding:1rem;
 }
+.innerHeader h1{
+    text-align: center;
+}
 .innerHeader span{
     display: inline-block;
 }
