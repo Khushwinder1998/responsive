@@ -17,7 +17,6 @@ body{
     list-style-type: none;
 }
 .innerHeader a{
-    display: inline-block;
     text-decoration: none;
     font-weight: bold;
     padding-right: 3rem;
