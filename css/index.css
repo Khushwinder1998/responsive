@@ -6,8 +6,12 @@ body{
     font-family: 'Domine', serif;
     margin: 0;
 }
+.innerHeader{
+    padding: 1rem;
+}
 .innerHeader h1{
     text-align: center;
+    font-weight: bold;
 }
 .innerHeader span{
     display: inline-block;
@@ -18,14 +22,16 @@ body{
 }
 .innerHeader ul{
     list-style-type: none;
+    padding: 0;
 }
 .innerHeader a{
-    display: inline-block;
+    display: block;
     text-decoration: none;
     font-weight: bold;
-    padding-right: 3rem;
     color: initial;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    padding: 5px;
+
 }
 .innerHeader a:hover{
     color: red;
@@ -129,6 +135,9 @@ footer p{
     .innerHeader ul{
         display: flex;
         list-style-type: none;
+    }
+    .innerHeader a{
+        padding-right: 2rem;
     }
     .cssSection{
         margin:auto;
