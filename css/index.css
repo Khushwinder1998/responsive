@@ -2,17 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 /* animation */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
-
 body{
-    font-family: 'Domine', serif;
-    margin: 0;
-}
-.innerHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.innerHeader h1{
     font-family: 'Domine', serif;
     margin: 0;
 }
@@ -23,7 +13,9 @@ body{
     animation: heartBeat; 
     animation-duration: 1s;
 }
-
+.innerHeader ul{
+    list-style-type: none;
+}
 .innerHeader a{
     display: inline-block;
     text-decoration: none;
@@ -41,11 +33,12 @@ body{
 /* section two */
 .cssSection{
     max-width: 1200px;
-    margin:  0 auto;
-    padding:100px 30px;
+    margin:  0;
+    padding:1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 100px;
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -63,12 +56,11 @@ body{
     grid-gap: 20px;
 }
 .cssSection button{
-    font-family: 'Domine', serif;
     background-color: white;
     border:solid 0.5px;
     border-radius:5px;
-    margin:5px 10px;
     font-size:1.2rem;
+    padding:10px 40px;
 }
 .cssSection button:hover{
     color: red;
@@ -78,13 +70,14 @@ body{
 /* javascriptSection */
 .jsSection{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    padding:1rem;
     font-size: 1.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 100px;
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
     justify-content: center;
-    padding: 30px;
 }
 .jsSection span{
     font-weight: bold;
@@ -95,7 +88,7 @@ body{
     border:solid 0.5px;
     border-radius:5px;
     font-size:1.2rem;
-    padding:10px 30px;
+    padding:10px 40px;
 }
 .jsSection button:hover{
     color: red;
@@ -118,15 +111,28 @@ footer p{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     header{
         max-width: 1200px;
         margin: 0 auto;
         padding: 30px;
     }
+    .innerHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .innerHeader ul{
         display: flex;
         list-style-type: none;
     }
+    .cssSection{
+        margin:auto;
+    }
+    .jsSection{
+        margin:auto;
+    }
+
     
 }
