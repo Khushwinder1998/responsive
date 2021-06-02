@@ -6,9 +6,6 @@ body{
     margin: 0;
     padding: 0;
 }
-header h1{
-    font-family: lucidahandwriting, cursive;
-}
 header{
     max-width:1200px;
     margin: 0 auto;
@@ -16,6 +13,10 @@ header{
     border-style:solid;
     border-width: 0px 0px 0.5px 0px;
 }
+header h1{
+    font-family: lucidahandwriting, cursive;
+}
+
 header ul{
     padding: 0;
 }
@@ -31,8 +32,10 @@ header a{
     color: inherit;
 }
 header a:hover{
-    text-decoration: none;
-    color: inherit;
+    color: #5817d1;
+    animation: pulse; 
+    animation-duration: 1s;
+    transition: 1s ;
 }
  /* flowercity */
  .FlowerCity{
