@@ -1,3 +1,3 @@
 function floatlink(){
-    window.location.replace("links/Brampton/index.html");
+    window.location.replace("Links/Brampton/index.html");
 }
