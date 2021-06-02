@@ -52,7 +52,7 @@ body{
 }
 .cssSection span{
     font-weight: bold;
-    color: #49fd1c;
+    color: #fda31c;
 }
 .cssSection p{
     grid-column: 1/3;
@@ -89,7 +89,7 @@ body{
 }
 .jsSection span{
     font-weight: bold;
-    color: #49fd1c;
+    color: #fda31c;
 }
 .jsSection button{
     background-color: white;
