@@ -29,10 +29,10 @@ header li{
 header a{
     display: block;
     text-decoration: none;
-    color: inherit;
+    font-weight: bold;
+    color: #5817d1;
 }
 header a:hover{
-    color: #5817d1;
     animation: pulse; 
     animation-duration: 1s;
     transition: 1s ;
