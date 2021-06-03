@@ -5,66 +5,74 @@
         <title>Khush Lubana</title>
         <link rel="stylesheet" href="css/index.css">
     </head>
-    <body>
-        <header>
-            <div class="innerHeader">
-                <h1>
-                    <span>K</span>
-                    <span>h</span>
-                    <span>u</span>
-                    <span>s</span>
-                    <span>h</span>
-                </h1>
-                <ul>
-                    <li><a href=".cssSection">CSS</a></li>
-                    <li><a href=".jsSection">JavaScript</a></li>
-                    <li><a href="#">Jquery</a></li>
-                    <li><a href="#">React</a></li>
-                </ul>                
+    <body class="overlayIsOpen">
+        <div class="overlay">
+            <div class="overlayInner">
+                <p>This webpage is coded with css using only <span>&lt;float&gt;</span> and it is responsive.  </p>
+                <button id="blurButton">OKAY</button>
             </div>
-        </header>
-        <div class="cssSection">
-            <section>
-                <p>
-                    <span>O</span>nce you have written your html code, it's time to style your css. Few years ago, programmers used <span>&lt;float&gt;</span> property
-                    to design webpages until flexbox and gridbox came along. Nowadays, you can use famous css frameworks like <span>BOOTSTRAP</span> and
-                    <span>TAILWIND</span> to design html webpages in faction of time.
-                </p>
-            </section>
-            <aside>
-                <p><span>Click</span> on the buttons for example on each of css properties</p>
-                <button type="button" onclick="floatlink()"">Float</button>
-                <button type="button">Flexbox</button>
-                <button type="button">Grid</button>
-                <button type="button">Bootstrap</button>
-            </aside>
         </div>
-        <section class="jsSection">
-            <div><p>
-                HTML and CSS were only good for static websites but when there was need to interact with users, <span>JavaScript</span> was invented.
-                Now, we have different javascript  solving another complex problems for us. Click on the button to check out <span>JavaScript</span> webpage.
-                </p>
-                <button type="button">JavaScript</button>
+        <div class="wrapper">
+            <header>
+                <div class="innerHeader">
+                    <h1>
+                        <span>K</span>
+                        <span>h</span>
+                        <span>u</span>
+                        <span>s</span>
+                        <span>h</span>
+                    </h1>
+                    <ul>
+                        <li><a href=".cssSection">CSS</a></li>
+                        <li><a href=".jsSection">JavaScript</a></li>
+                        <li><a href="#">Jquery</a></li>
+                        <li><a href="#">React</a></li>
+                    </ul>                
+                </div>
+            </header>
+            <div class="cssSection">
+                <section>
+                    <p>
+                        <span>O</span>nce you have written your html code, it's time to style your css. Few years ago, programmers used <span>&lt;float&gt;</span> property
+                        to design webpages until flexbox and gridbox came along. Nowadays, you can use famous css frameworks like <span>BOOTSTRAP</span> and
+                        <span>TAILWIND</span> to design html webpages in faction of time.
+                    </p>
+                </section>
+                <aside>
+                    <p><span>Click</span> on the buttons for example on each of css properties</p>
+                    <button type="button" onclick="window.location.href='../Brampton/index.html';">Float</button>
+                    <button type="button">Flexbox</button>
+                    <button type="button">Grid</button>
+                    <button type="button">Bootstrap</button>
+                </aside>
             </div>
-            <div>
-                <p><span>jQuery</span> is a lightweight, "write less, do more", JavaScript library.
-                    The purpose of <span>jQuery</span> is to make it much easier to use JavaScript on your website.
-                <span>jQuery</span> takes a lot of common tasks that require many lines of JavaScript code to accomplish, 
-                     single.
-                </p>
-                <button type="button">jQuery</button>
-            </div>
-            <div>
-                <p><span>React</span> is a JavaScript library created by Facebook.
-                <span>React</span> is a tool for building UI components.Instead of manipulating the browser's DOM directly,
-                <span>React</span> creates a virtual DOM in memory,  the necessary manipulating, before making the changes in the browser DOM.
-                </p>
-                <button type="button">React</button>
+            <section class="jsSection">
+                <div><p>
+                    HTML and CSS were only good for static websites but when there was need to interact with users, <span>JavaScript</span> was invented.
+                    Now, we have different javascript  solving another complex problems for us. Click on the button to check out <span>JavaScript</span> webpage.
+                    </p>
+                    <button type="button">JavaScript</button>
+                </div>
+                <div>
+                    <p><span>jQuery</span> is a lightweight, "write less, do more", JavaScript library.
+                        The purpose of <span>jQuery</span> is to make it much easier to use JavaScript on your website.
+                    <span>jQuery</span> takes a lot of common tasks that require many lines of JavaScript code to accomplish, 
+                            single.
+                    </p>
+                    <button type="button">jQuery</button>
+                </div>
+                <div>
+                    <p><span>React</span> is a JavaScript library created by Facebook.
+                    <span>React</span> is a tool for building UI components.Instead of manipulating the browser's DOM directly,
+                    <span>React</span> creates a virtual DOM in memory,  the necessary manipulating, before making the changes in the browser DOM.
+                    </p>
+                    <button type="button">React</button>
             </div>
         </section>
         <footer>
             <p>All rights reserved to Khush Lubana</p>
         </footer>
+    </div>
         <script src="js/index.js"></script>
     </body>
 </html>

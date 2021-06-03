@@ -33,6 +33,7 @@ body{
     color: #5817d1;
     font-size: 1.5rem;
     padding: 5px;
+
 }
 .innerHeader a:hover{
     animation: pulse; 
@@ -118,6 +119,41 @@ footer p{
     color: white;
     padding: 10px;
 }
+    /* animated popup */
+.overlayIsOpen .overlay{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.overlayInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay button{
+    background-color: white;
+    border:solid 0.5px;
+    border-radius:5px;
+    font-size:1.2rem;
+    padding:10px 60px;
+    color: #5817d1;
+}
+.overlay button:hover{
+    box-shadow: 0 0 0 2px #5817d1;
+    transition: all 200ms;
+} 
+.overlayIsOpen .wrapper{
+    position: absolute;
+    z-index: -1;
+    filter:blur(30px);
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) {
@@ -145,5 +181,4 @@ footer p{
         margin:auto;
     }
 
-    
 }
