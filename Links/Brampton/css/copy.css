@@ -4,105 +4,103 @@ html *{
 body{
     font-family: Arial, sans-serif;
     background-color: beige;
-    margin: 1rem;
+    margin: 0;
+    padding: 1rem;
 }
 header h1{
     font-family: lucidahandwriting, cursive;
-    margin: 0;
 }
 header{
+    max-width:1200px;
+    margin: auto;
     border-style:solid;
     border-width: 0px 0px 0.5px 0px;
 }
-header ul{
-    padding: 0;
-}
 header li{
     font-size: large;
-    padding: .3rem;
-    list-style-type: none;
 }
 header a{
     text-decoration: none;
     color: inherit;
 }
  /* flowercity */
+ .FlowerCity{
+    max-width:1200px;
+    margin: auto;
+ }
  .FlowerCity h1{
     font-family: lucidahandwriting, cursive;
-    font-size: 1.5rem;
+     font-size: 2rem;
  }
  .FlowerCity p{
      font-size: large;
  }
- .FlowerCity img{ 
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-    outline: solid 2px black;
-    outline-offset: -5px;
-    padding: 10px;
+ .FlowerCity img{
+    padding: 1rem 0; 
+    width: auto;
+    height:200px;
 }
+
  /* footer */
 footer{
     background-color: #131A22;
+    margin: 0;
 }
 
 footer p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
-    padding: 1rem;
-    margin: 1rem 0 0 0;
+    padding: 1rem 0;
+    margin:1rem 0 0 0;
 }
  @media all and (min-width:600px){
-    body{
-         margin: 0;
+     body{
+         padding: 0;
      }
     header{
-        width: 90%;
-        height: 10vh;
-        margin: auto;
+        height: 70px;
+        align-items:center;
     }
     header h1{
         float: left;
-    }
-    ul{
-        float: right;
-        margin: auto;
+        display: inline;
+        margin: 0;
+        padding: 0;
     }
     header li{
-        float: left;
+        float:right;
+        display: inline;
+        border-width: 0px 0px 4px 0px;
         padding: 1.2rem 0.5rem;
+        margin: 0;
         list-style-type: none;
     }
+    
     header li:hover{
         transition: 1s;
         background-color: rgb(223, 223, 205);
-        border-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     .FlowerCity{
-        width: 90%;
-        margin: auto;
-        clear: both;
+        height: auto;
+        overflow:hidden;
     }
     .FlowerCity h1{
         margin: 0;
         padding: 1rem 0;
     }
     .FlowerCity p{
-        float: left;
+        float:left;
         width: 50%;
-        margin: 0;
-        padding-bottom: 1rem;
     }    
     .FlowerCity img{
         float: right;
-        width:45%;
         height: auto;
-        object-fit: cover;
-    }
-    footer{
-        clear: both;
+        width: 40%;
+        outline: solid 2px black;
+        outline-offset: 2px;
     }
  }
 /* animated popup */
@@ -140,3 +138,4 @@ footer p{
         z-index: -1;
         filter:blur(30px);
     }  */
+
