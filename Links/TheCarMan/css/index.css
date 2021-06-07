@@ -44,9 +44,9 @@ header{
 }
 /* hero */
 .hero{
-    background-image: url(../photosSVGs/car3.jpg);
+    background-image: url(../photosSVGs/car5.jpg);
     height: 90vh;
-    background-size:cover;
+    background-size: cover;
     padding-top: 1rem;
     padding-left: 1rem;
 }
@@ -137,7 +137,7 @@ footer p{
     padding: 1rem 0;
     margin: 0;
 }
-@media all and (min-width:600px){
+@media all and (min-width:992px){
     header{
         position: sticky;
         top: 0;
@@ -146,6 +146,7 @@ footer p{
     .hero{
         padding-top: 1rem;
         padding-left: 1rem;
+        background-position: top -15vh left;
     }
     .hero h1{
         font-size: 4rem;
