@@ -104,7 +104,7 @@ let jsonData = [{
         "code": "#008B8B"
     },
     {
-        "color": "DarlGoldenRoad",
+        "color": "DarkGoldenRod",
         "code": "#B8860B"
     },
     {
@@ -226,7 +226,6 @@ colorstabClass.addEventListener("click", (event) => {
 });
 randomColorsButton.addEventListener("click", () => {
     //frame color
-    console.log(jsonData[Math.floor(Math.random() * jsonData.length)].color)
     pictureClass.style.borderColor = jsonData[Math.floor(Math.random() * jsonData.length)].color;
     pictureClass.style.outlineColor = jsonData[Math.floor(Math.random() * jsonData.length)].color;
     pictureClass.style.backgroundColor = jsonData[Math.floor(Math.random() * jsonData.length)].color;
@@ -250,14 +249,15 @@ function appendToPictureClass(value) {
     pictureClass.appendChild(p);
 }
 downloadImageButton.addEventListener("click", () => {
-    window.scrollTo(0, 0);
-
-    // Convert the div to image (canvas)
-    html2canvas(pictureClass).then(function(canvas) {
-
-        // Get the image data as JPEG and 0.9 quality (0.0 - 1.0)
-        console.log(canvas.toDataURL("image/jpeg", 0.9));
-    });
+    domtoimage.toJpeg(pictureClass, {
+            quality: 0.95
+        })
+        .then(function(dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-image-name.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
 });
 
 
